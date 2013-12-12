@@ -1,0 +1,5 @@
+| Paper                                                           | Year | Tags                    | Thoughts                                                                              | Actions                    |
+| Kernel Methods For Deep Learning                                | 2009 | svm deep image          | arc-cosine kernel; good performance; implementable                                    | try deep kernel pca w/ gbm |
+| Gaussian Processes A Replacement For Supervised Neural Networks | 1997 | gp nn                   | theoretical; moderate performance; based on single hidden layer                       | skimmed                    |
+| CrowdFlow Integrating Machine Learning With Mechanical Turk     | 2010 | crowdsource tool python | could be useful                                                                       |                            |
+| Two-Layer Multiple Kernel Learning                              | 2011 | svm deep                | doesnt compare to state of the art; tiny data sets; didn't tune other kernels as much |                            |
