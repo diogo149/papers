@@ -1,6 +1,56 @@
-| Paper                                                                      | Year | Tags                    | Thoughts                                                                              | Actions                    |
-| Kernel Methods For Deep Learning                                           | 2009 | svm deep image          | arc-cosine kernel; good performance; implementable                                    | try deep kernel pca w/ gbm |
-| Gaussian Processes A Replacement For Supervised Neural Networks            | 1997 | gp nn                   | theoretical; moderate performance; based on single hidden layer                       | skimmed                    |
-| CrowdFlow Integrating Machine Learning With Mechanical Turk                | 2010 | crowdsource tool python | could be useful                                                                       |                            |
-| Two-Layer Multiple Kernel Learning                                         | 2011 | svm deep                | doesnt compare to state of the art; tiny data sets; didn't tune other kernels as much |                            |
-| Practical Recommendations Of Gradient Based Training Of Deep Architectures | 2012 | nn deep                 | very nice tips especially on debugging                                                |                            |
+* Kernel Methods For Deep Learning 2009                  :svm:deep:image:try:
+arc-cosine kernel
+good performance
+implementable
+** try
+deep kernel pca w/ gbm
+* Gaussian Processes A Replacement For Supervised Neural Networks 1997 :gp:nn:
+theoretical
+moderate performance
+based on single hidden layer
+skimmed
+* CrowdFlow Integrating Machine Learning With Mechanical Turk 2010 :crowdsource:tool:python:
+could be useful
+* Two-Layer Multiple Kernel Learning 2011                          :svm:deep:
+doesnt compare to state of the art
+tiny data sets
+didn't tune other kernels as much
+* Practical Recommendations Of Gradient Based Training Of Deep Architectures 2012 :nn:deep:
+very nice tips especially on debugging
+* Practical Feature Selection From Correlation To Causality 2008 :selection:causality:
+skimmed
+large focus on explaining/understanding
+* Distributed Representations Of Words And Phrases And Their Compositionality 2013 :nlp:nn:
+-extension of word2vec
+-explains skip-gram model: tries to predict a weighted average of surrounding words (and approximates that w/ sampling)
+-explains hierarchical softmax: binary huffman tree for predicting many classes in O(log n) instead of O(n)
+  -have most common words higher up in the tree to speed up training time
+-proposes noise contrastive estimate and negative sampling to decrease training time
+-negative sampling: sample from a random noisy distribution to penalize prediction the current-word with bad input data (regularization, random data shouldn't predict the word)
+-subsample most frequent words because they are less informative
+-hieararchical softmax w/ sampling performs best when lots of data is present
+* Powergrading A Clustering Approach to Amplify Human Effort For Short Answer Grading 2013 :education:activelearning:
+-interesting for MOOCs
+-active learning w/ human interface (through clustering and subclustering)
+* Learning Word Embeddings Efficiently with Noise-Contrastive Estimation 2013 :nn:nlp:
+-same idea as word2vec
+-noise contrastive estimation:
+  -for classification w/ large # of classes
+  -as negative examples of a class, sample from a noise distribution (this examples uses a unigram model / random word)
+  -weight the noisy samples proportional to the ratio of noise to data either by sampling more points or using an algorithm w/ sample importance
+  -use logistic regression to get probabilities
+-uses vector log-bilinear models (supposedly fast)
+-data pre-processing
+  -lowercase
+  -replace all digits with 7
+  -keep words that occurred at least 10 times
+-creates an embedding for the output space as well (2 layers?)
+-competitive w/ word2vec
+-used adagrad for learning rate
+-position independent weights performed better
+* Learning Stochastic Feedforward Neural Networks 2013   :nn:deep:generative:
+-generative model
+-finds similar points to input distribution
+-efficient
+-very accurate in comparison
+-combines stochastic and deterministic hidden units
