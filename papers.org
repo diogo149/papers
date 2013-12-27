@@ -54,3 +54,10 @@ large focus on explaining/understanding
 -efficient
 -very accurate in comparison
 -combines stochastic and deterministic hidden units
+* Probabilistic Topic Models 2012                      :nlp:unsupervised:lda:
+-summary of LDA w/ description of similar algorithms
+-LDA: very explainable, so probably can do better from a performance perspective (possibly with sparse filtering?)
+* Survey On Independent Component Analysis 1999 :ica:dimensionalityreduction:
+-skimmed
+-ica: a method for redundancy reduction
+-no hard results; just figures showing that it works
