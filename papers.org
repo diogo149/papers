@@ -61,3 +61,11 @@ large focus on explaining/understanding
 -skimmed
 -ica: a method for redundancy reduction
 -no hard results; just figures showing that it works
+* A Unifying Review of Linear Gaussian Models 1999           :linear:pca:ica:
+-skimmed
+-only theoretical; no results
+-involved factor analysis, pca, ica, etc.
+* PyBrain 2010                                               :nn:python:tool:
+-looks very extensible
+-supposedly within a magnitude of performance of C++
+-supposedly uses swig and C++ for more performance (if this is the case, custom stuff may behave slower, but looking at the repo, it's almost entirely python)
