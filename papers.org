@@ -69,3 +69,13 @@ large focus on explaining/understanding
 -looks very extensible
 -supposedly within a magnitude of performance of C++
 -supposedly uses swig and C++ for more performance (if this is the case, custom stuff may behave slower, but looking at the repo, it's almost entirely python)
+* Predicting Parameters in Deep Learning 2013                       :nn:deep:
+-seemingly amazing performance w/ large gains in efficiency
+-might not be that great; no comparison to state of the art
+-implementable
+* Do Deep Nets Really Need to be Deep? 2013                         :nn:deep:
+-simulated the mimicing of deep networks with shallow ones by training on examples in the test set with the results from the deep architectures
+-really cool idea: linear bottleneck layers to speed up the training of large networks
+-conclusion is that better training methods for shallow networks might enable matching / beating deep networks
+* Intriguing Properties of Neural Networks 2013                     :nn:deep:
+-main idea is that visually insignificant perturbations can be applied to examples to create adversarial data that makes models produce the wrong output, and generalization can be improved by creating these examples and training on them with the correct label along with the training set
