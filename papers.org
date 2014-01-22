@@ -79,3 +79,6 @@ large focus on explaining/understanding
 -conclusion is that better training methods for shallow networks might enable matching / beating deep networks
 * Intriguing Properties of Neural Networks 2013                     :nn:deep:
 -main idea is that visually insignificant perturbations can be applied to examples to create adversarial data that makes models produce the wrong output, and generalization can be improved by creating these examples and training on them with the correct label along with the training set
+* Multi-Prediction Deep Boltzmann Machines 2013
+-improvements over DBMs with easier training algorithm and slightly (?) better results
+-looks very promising for missing data
