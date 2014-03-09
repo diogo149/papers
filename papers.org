@@ -79,6 +79,21 @@ large focus on explaining/understanding
 -conclusion is that better training methods for shallow networks might enable matching / beating deep networks
 * Intriguing Properties of Neural Networks 2013                     :nn:deep:
 -main idea is that visually insignificant perturbations can be applied to examples to create adversarial data that makes models produce the wrong output, and generalization can be improved by creating these examples and training on them with the correct label along with the training set
-* Multi-Prediction Deep Boltzmann Machines 2013
+* Multi-Prediction Deep Boltzmann Machines 2013                        :deep:
 -improvements over DBMs with easier training algorithm and slightly (?) better results
 -looks very promising for missing data
+* Distributed Representations of Words and Phrases and their Compositionality 2013 :nn:nlp:
+-[[http://arxiv.org/pdf/1310.4546.pdf][pdf]]
+-[[https://code.google.com/p/word2vec/][open source software]]
+-the idea is project a high-dimensional sparse space (words) to a lower dimensional dense space that would capture the semantic meaning of the words
+-best training algorithm was the skip-gram model where words were used to predict a randomly selected nearby word (weighting probabilities inversely proportional to distance)
+  -use current word to predict a random surrounding word
+  -to make training efficient, instead predict the splits of a binary tree
+  -this effectively trains a model to predict a context given a word
+-used a single hidden layer neural net
+-since there were only positive examples, negative samples were obtained by randomly sampling the input distribution
+-can be used for analogies: the closest match to (king - man + woman) is queen (using vector arithmetic)
+* DeViSE: A Deep Visual-Semantic Embedding Model                 :deep:nn:cv:
+-[[http://papers.nips.cc/paper/5204-devise-a-deep-visual-semantic-embedding-model.pdf][pdf]]
+-use upper layers of a deep convolutional net trained for images to predict the hidden layer of a net used for semantic NLP tasks (word2vec)
+-this allows the image features to be used to predict features of words, and thus predict words outside of the training dictionary (for images)
